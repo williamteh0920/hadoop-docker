@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#crlf to lf change
 # N is the node number of hadoop cluster
 N=$1
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+#crlf to lf change
 
 # start hadoop slave container
 i=3

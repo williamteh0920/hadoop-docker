@@ -1,4 +1,5 @@
 #!/bin/bash
+#crlf to lf change
 
 # test the hadoop cluster by running wordcount
 

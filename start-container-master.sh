@@ -1,4 +1,5 @@
 #!/bin/bash
+#crlf to lf change
 
 # start hadoop master container
 sudo docker rm -f hadoop-master &> /dev/null

@@ -29,6 +29,8 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 # protocol.  Jsvc is not required if SASL is configured for authentication of
 # data transfer protocol using non-privileged ports.
 #export JSVC_HOME=${JSVC_HOME}
+#crlf to lf change
+
 
 export HADOOP_CONF_DIR=${HADOOP_CONF_DIR:-"/etc/hadoop"}
 
