@@ -37,7 +37,8 @@ RUN mv /tmp/ssh_config ~/.ssh/config && \
     mv /tmp/reducer.py ~/reducer.py && \
     mv /tmp/hadoop-streaming-3.3.6.jar ~/hadoop-streaming-3.3.6.jar && \
     mv /tmp/start-hadoop.sh ~/start-hadoop.sh && \
-    mv /tmp/run-wordcount.sh ~/run-wordcount.sh
+    mv /tmp/run-wordcount.sh ~/run-wordcount.sh && \
+    mv /tmp/input_1000_words.txt ~/input_1000_words.txt
 
 
 RUN chmod +x ~/start-hadoop.sh && \
@@ -46,7 +47,8 @@ RUN chmod +x ~/start-hadoop.sh && \
     chmod +x ~/reducer.py && \
     chmod +x ~/hadoop-streaming-3.3.6.jar && \
     chmod +x $HADOOP_HOME/sbin/start-dfs.sh && \
-    chmod +x $HADOOP_HOME/sbin/start-yarn.sh 
+    chmod +x $HADOOP_HOME/sbin/start-yarn.sh && \
+    chmod +x ~/input_1000_words.txt
 
 # format namenode
 RUN /usr/local/hadoop/bin/hdfs namenode -format
