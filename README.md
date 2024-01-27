@@ -29,14 +29,18 @@ sudo docker network create --driver=bridge hadoop
 ##### 6. start container [(ctrl + d) to exit container user]
 
 ```
-cd hadoop-cluster-docker
+cd hadoop-docker
 sudo ./start-container-master.sh
+# press ctrl+d to exit root@hadoop-master
 sudo ./start-container-slave12.sh
 ```
 
 ##### 7. start hadoop
 
 ```
+# Go into root@hadoop-master
+sudo docker exec -it hadoop-master bash
+
 ./start-hadoop.sh
 ```
 
